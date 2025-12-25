@@ -23,6 +23,6 @@ public class Figure {
         return this.c3;
     }
 
-    public String getTypeTriangle(){ return null; }
+    public String getTypeTriangle(){ return "N'est pas Triangle"; }
 
 }
