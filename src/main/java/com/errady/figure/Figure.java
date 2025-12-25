@@ -27,8 +27,12 @@ public class Figure {
         if(c1 == c2 && c2 == c3){
             return "Triangle Equilateral";
         }
+        else if(c1 == c2 || c1 == c3 || c2 == c3){
+            return "Triangle Isocele";
+        }
         else{
             return "N'est pas Triangle";
         }
     }
+
 }
