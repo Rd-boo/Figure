@@ -30,8 +30,11 @@ public class Figure {
         else if(c1 == c2 || c1 == c3 || c2 == c3){
             return "Triangle Isocele";
         }
-        else{
+        else if(c1 + c2 < c3 || c1 + c3 < c2 || c2 + c3 < c1){
             return "N'est pas Triangle";
+        }
+        else{
+            return "Triangle Scalene";
         }
     }
 
