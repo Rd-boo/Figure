@@ -23,6 +23,12 @@ public class Figure {
         return this.c3;
     }
 
-    public String getTypeTriangle(){ return "N'est pas Triangle"; }
-
+    public String getTypeTriangle(){
+        if(c1 == c2 && c2 == c3){
+            return "Triangle Equilateral";
+        }
+        else{
+            return "N'est pas Triangle";
+        }
+    }
 }
